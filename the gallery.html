@@ -1,0 +1,139 @@
+<html>
+<html lane="en">
+<head>
+<title>Gallery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css"> 
+<body>
+<style>
+body {
+  font-family: Arial Narrow, Open Sans, sans-serif;
+}
+</style>
+</head>
+
+<section id="heading">
+  <a href="about me.html">
+  <img src="images/logo.png" width="30%" height="15%">
+</a>
+</section>
+
+<section id="navbar">
+<ul>
+  <li><a href="index.html">HOME</a></li>
+  <li><a href="about me.html">ABOUT ME</a></li>
+  <li><a href="experiences.html">EXPERIENCES</a></li>
+  <li><a href="education.html">EDUCATION</a></li>
+  <li><a href="la familia.html">FAMILY</a></li>
+  <li><a href="the gallery.html">THE GALLERY</a></li>
+  <li><a href="contacts.html">CONTACT ME</a></li>
+</ul>
+</section>
+<br>
+
+<div class="container3">
+  <div class="gallery-container">
+  <div class="mySlides">
+      <img src="images/friends.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+      <img src="images/friends 4.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+      <img src="images/friends 2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+      <img src="images/friends 7.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+      <img src="images/views 2.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+      <img src="images/friends 13.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/friends 4.jpeg" style="width:100%" onclick="currentSlide(1)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/friends.jpg" style="width:100%" onclick="currentSlide(2)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/friends 2.jpg" style="width:100%" onclick="currentSlide(3)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/friends 7.jpeg" style="width:100%" onclick="currentSlide(4)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/views 2.jpeg" style="width:100%" onclick="currentSlide(5)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/friends 13.jpg" style="width:100%" onclick="currentSlide(6)">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+<div class="container">
+<style>
+ul li {
+  display:inline-block;
+  color: black;
+}
+</style>
+<ul>
+  <div class="footer">
+  <li><a href="https://www.instagram.com/sarahlotfiah"><img src="images/insta.png"></a></li>
+  <li><a href="https://www.facebook.com/sarah.lotfiah"><img src="images/facebook.png"></a></li>
+  <li><a href="https://open.spotify.com/user/httpsarah"><img src="images/spotify.png"></a></li>
+  <li><sup>This website is develop for IMD311 - Introduction to Web Content and Design
+<br> Any information and material use for education only.</sup></li>
+</ul>
+</div>
+
+</body>
+</html>

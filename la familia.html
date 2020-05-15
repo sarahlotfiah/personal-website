@@ -1,0 +1,112 @@
+<html>
+<html lane="en">
+<head>
+<title>la familia</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css"> 
+<body>
+<style>
+body {
+  font-family: Arial Narrow, Open Sans, sans-serif;
+}
+</style>
+</head>
+
+<section id="heading">
+  <a href="about me.html">
+  <img src="images/logo.png" width="30%" height="15%">
+</a>
+</section>
+
+<section id="navbar">
+<ul>
+  <li><a href="index.html">HOME</a></li>
+  <li><a href="about me.html">ABOUT ME</a></li>
+  <li><a href="experiences.html">EXPERIENCES</a></li>
+  <li><a href="education.html">EDUCATION</a></li>
+  <li><a href="la familia.html">FAMILY</a></li>
+  <li><a href="the gallery.html">THE GALLERY</a></li>
+  <li><a href="contacts.html">CONTACT ME</a></li>
+</ul>
+</section>
+<br>
+
+<div class="container2">
+  <div class="slideshow-container"> 
+
+  <div class="mySlides fade">
+    <img src="images/cousins 2.jpeg" style="width:100%">
+    <div class="text"><h3>my cousins<h3></div>
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="images/lyana.jpg" style="width:100%">
+    <div class="text"><h3>me and my cousin, lyana<h3></div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/cousins 3.jpg" style="width:100%">
+    <div class="text"><h3>me, lyana, sofea(right) & rania(left)<h3></div>
+  </div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+ 
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace;
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<div class="container">
+<style>
+ul li {
+  display:inline-block;
+  color: black;
+}
+</style>
+<ul>
+  <div class="footer">
+  <li><a href="https://www.instagram.com/sarahlotfiah"><img src="images/insta.png"></a></li>
+  <li><a href="https://www.facebook.com/sarah.lotfiah"><img src="images/facebook.png"></a></li>
+  <li><a href="https://open.spotify.com/user/httpsarah"><img src="images/spotify.png"></a></li>
+  <li><sup>This website is develop for IMD311 - Introduction to Web Content and Design
+  <br> Any information and material use for education only.</sup></li>
+</ul>
+</div>
+</div>
+
+</body>
+</html>

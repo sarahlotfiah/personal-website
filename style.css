@@ -1,0 +1,296 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+ }
+
+#heading{
+  padding: 20px 70px; 
+  text-align: center; 
+  background: white; 
+}
+
+#navbar {
+  color: black;
+  overflow: hidden; 
+  background-color: white; 
+}
+
+#navbar a {
+  padding: 60px;
+  float: left; 
+  display: block; 
+  color: black; 
+  font-size: 15;
+  text-align: center; 
+  padding: 0px 60px; 
+  text-decoration: none; 
+}
+
+#navbar a:hover {
+  color: light grey; 
+  opacity: .5;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: grey;
+}
+
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: pink;
+  opacity: .7;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container .btn:hover {
+  background-color: grey;
+  opacity:.5;
+} 
+
+.container a:link, a:visited {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.container .footer {
+  padding: 20px 50px; 
+  text-align: left;
+  color: black;
+  background: white; 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 20%; 
+  background-image: url("images/home 1.jpg");
+  padding: 97px; 
+}
+
+.main {
+  flex: 50%; 
+  font-size: 19;
+  background-color: #F2C6D7;
+  padding:  80px;
+  text-align: right;
+  
+}
+
+.main a:link, a:visited {
+    color: grey;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.main a:link:hover {
+  color: pink;
+  opacity:.7;
+} 
+
+.main a:visited:hover {
+    color: pink;
+  opacity:.7;
+} 
+
+.video {
+  position: relative;
+  text-align: center;
+  color: #545454;
+}
+
+.centered1 {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.edu {
+  position: relative;
+  text-align: center;
+  color: grey;
+}
+
+.centered2 {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered3 {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container2{
+ background-image: url("images/home 1.jpg") 
+}
+
+.slideshow-container {
+  max-width: 630px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+.container {
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 14px;
+  margin-top: -50px;
+  color: white;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.row:after {
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.imagemain {
+  background-image: url("images/home 1.jpg");
+  position: relative;
+  text-align: center;
+  color: #545454;
+}
